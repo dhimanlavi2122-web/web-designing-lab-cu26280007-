@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Multi Step Form</title>
+
+    <style>
+        .step {
+            width: 400px;
+            padding: 20px;
+            border: 1px solid gray;
+        }
+
+        .step2 {
+            display: none;
+        }
+
+        input {
+            padding: 8px;
+            margin: 8px;
+        }
+    </style>
+</head>
+
+<body>
+
+<h2>Onboarding Form</h2>
+
+<div class="step">
+
+    <h3>Step 1</h3>
+
+    <input type="text" placeholder="Enter Name">
+    <br>
+
+    <input type="email" placeholder="Enter Email">
+    <br>
+
+    <button onclick="showStep2()">Next</button>
+
+</div>
+
+<div class="step step2" id="second">
+
+    <h3>Step 2</h3>
+
+    <input type="text" placeholder="Enter Address">
+    <br>
+
+    <input type="text" placeholder="Enter City">
+    <br>
+
+    <button>Submit</button>
+
+</div>
+
+<script>
+    function showStep2() {
+        document.getElementById("second").style.display = "block";
+    }
+</script>
+
+</body>
+</html>

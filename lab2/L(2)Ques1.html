@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Registration Form</title>
+</head>
+
+<body>
+
+    <h2>Student Registration Form</h2>
+
+    <form>
+
+        <!-- Name -->
+        <label>Student Name:</label>
+        <input type="text"
+               name="name"
+               required
+               minlength="3"
+               maxlength="30"
+               pattern="[A-Za-z ]+"
+               placeholder="Enter your name">
+        <br><br>
+
+        <!-- Email -->
+        <label>Email:</label>
+        <input type="email"
+               name="email"
+               required
+               placeholder="Enter your email">
+        <br><br>
+
+        <!-- Password -->
+        <label>Password:</label>
+        <input type="password"
+               name="password"
+               required
+               minlength="6"
+               maxlength="15"
+               placeholder="Enter password">
+        <br><br>
+
+        <!-- Roll Number -->
+        <label>Roll Number:</label>
+        <input type="text"
+               name="roll"
+               required
+               pattern="[0-9]{5}"
+               placeholder="Enter 5 digit roll number">
+        <br><br>
+
+        <!-- Course -->
+        <label>Course:</label>
+        <select name="course" required>
+            <option value="">Select Course</option>
+            <option value="MCA">MCA</option>
+            <option value="BCA">BCA</option>
+            <option value="BBA">BBA</option>
+        </select>
+        <br><br>
+
+        <!-- Phone Number -->
+        <label>Phone Number:</label>
+        <input type="text"
+               name="phone"
+               required
+               pattern="[0-9]{10}"
+               placeholder="Enter 10 digit number">
+        <br><br>
+
+        <!-- Address -->
+        <label>Address:</label>
+        <textarea name="address"
+                  required
+                  minlength="10"
+                  maxlength="100"
+                  placeholder="Enter your address"></textarea>
+        <br><br>
+
+        <input type="submit" value="Register">
+
+    </form>
+
+</body>
+</html>
