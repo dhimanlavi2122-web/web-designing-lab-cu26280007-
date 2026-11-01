@@ -1,0 +1,85 @@
+513  cd ~/Linux_labsheet
+  514  mkdir "lab4"
+  515  ls 
+  516  cd lab4
+  517  pwd
+  518  whoami
+  519  id
+  520  id -u
+  521  id -g
+  522  groups
+  523  getent passwd nobody
+  524  username:password:UID:GID:GECOS:home_directory:login_shell
+  525  sudo passwd -S nobody
+  526  sudo useradd labuser1
+  527  cd ..
+  528  cd ~/Linux_labsheet
+  529  cd lab4
+  530  pwd
+  531  whoami
+  532  id
+  533  id -u
+  534  id -g
+  535  groups
+  536  getent passwd nobody
+  537  username:password:UID:GID:GECOS:home_directory:login_shell
+  538  cd ..
+  539  cd lab4
+  540  whoami
+  541  id 
+  542  id -u
+  543  id -g
+  544  groups
+  545  getent passwd nobody
+  546  username:password:UID:GID:GECOS:home_directory:login_shell
+  547  sudo passwd -S nobody
+  548  sudo useradd labuser1
+  549  getent passwd labuser1
+  550  id labuser1
+  551  sudo useradd-m labuser2
+  552  sudo useradd -m labuser2
+  553  getent passwd labuser2
+  554  ls -ld /home/labuser2
+  555  sudo useradd -m -s /bin/bash labuser3
+  556  getent passwd labuser3
+  557  sudo passwd labuser1
+  558  sudo passwd -S labuser1
+  559  sudo passwd labuser1
+  560  sudo passwd -S labuser1
+  561  sudo usermod -s /bin/bash labuser2
+  562  getent passwd labuser2
+  563  sudo usermod -d /home/labuser2_new labuser2
+  564  sudo useradd -m -s /bin/bash labuser_move
+  565  sudo touch /home/labuser_move/testfile.txt
+  566  sudo usermod -d /home/labuser_move_new -m labuser_move
+  567  ls -la /home/labuser_move_new
+  568  ls -ld /home/labuser_move /home/labuser_move_new
+  569  getent passwd labuser_move
+  570  sudo groupadd userlabgroup
+  571  sudo usermod -aG userlabgroup labuser1
+  572  id labuser1
+  573  groups labuser1
+  574  getent group userlabgroup
+  575  sudo passwd -l labuser3
+  576  sudo passwd -S labuser3
+  577  sudo passwd -u labuser3
+  578  sudo passwd -S labuser3
+  579  sudo chage -l labuser3
+  580  sudo usermod -e 2027-12-31 labuser3
+  581  sudo chage -l labuser3
+  582  sudo usermod -g userlabgroup labuser1
+  583  id labuser1
+  584  groups labuser1
+  585  getent passwd labuser1
+  586  getent group userlabgroup 
+  587  sudo userdel -r labuser2
+  588  getent passwd labuser2
+  589  ls -ld /home/labuser2
+  590  sudo userdel -r labuser1
+  591  sudo userdel -r labuser2
+  592  sudo userdel -r labuser3
+  593  sudo userdel -r labuser_move
+  594  sudo userdel -r workflowuser
+  595  sudo groupdel userlabgroup
+  596  sudo groupdel workflowgroup
+  597  history
