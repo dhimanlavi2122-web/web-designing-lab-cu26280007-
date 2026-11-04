@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" 
+        content="width=device-width,
+        initial-scale=1">
+        <title>Hamburger Menu</title>
+        <style>
+             body{margin:0;font-family:Arial}header{background:#26345d;
+             color:white;
+             padding:15px 20px;
+             display:flex;
+             justify-content:space-between;
+             align-items:center}.links{display:flex;gap:20px}.links a{color:white;
+             text-decoration:none}.menu{display:none;
+             background:none;
+             border:0;
+             color:white;
+             font-size:28px}@media(max-width:600px){.menu{display:block}.links{display:none;
+             position:absolute;
+             top:65px;
+             left:0;
+             right:0;
+             background:#26345d;
+             padding:20px;
+             flex-direction:column}.links.show{display:flex}}
+        </style>
+    </head>
+    <body>
+        <header>
+            <h2>My Site</h2>
+            <button class="menu" id="menu">☰</button>
+            <nav class="links" id="links">
+                <a href="#">Home</a>
+                <a href="#">About</a>
+                <a href="#">Projects</a>
+                <a href="#">Contact</a>
+            </nav>
+        </header>
+                <h1 style="text-align:center">Responsive Navigation</h1>
+                <script>
+                      document.getElementById("menu").addEventListener("click",function(){document.getElementById("links").classList.toggle("show")});
+                 </script>
+     </body>
+</html>

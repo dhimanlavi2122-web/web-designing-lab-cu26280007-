@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1"><title>Modal Popup</title><style>
+body{font-family:Arial;text-align:center;padding:40px}.modal{display:none;position:fixed;inset:0;background:#0008;align-items:center;justify-content:center}.modal.show{display:flex}.content{background:white;padding:25px;border-radius:10px;width:280px}.close{float:right;cursor:pointer;font-size:22px}
+</style>
+</head>
+<body>
+    <h1>Modal Example</h1>
+    <button id="open">Open Popup</button><div class="modal" id="modal"><div class="content"><span class="close" id="close">×</span><h2>Hello!</h2><p>This is a modal popup window.</p></div></div><script>
+let modal=document.getElementById("modal");document.getElementById("open").onclick=()=>modal.classList.add("show");document.getElementById("close").onclick=()=>modal.classList.remove("show");modal.onclick=e=>{if(e.target===modal)modal.classList.remove("show")};
+</script>
+</body>
+</html>

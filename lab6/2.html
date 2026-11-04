@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <title>Flexbox Portfolio</title>
+        <style>
+          *{box-sizing:border-box}body{margin:0;
+          font-family:Arial;
+          background:#f2f4f8}header{background:#26345d;
+          color:white;padding:20px;
+          display:flex;
+          justify-content:space-between;
+          align-items:center;
+          flex-wrap:wrap}nav{display:flex;
+          gap:18px}a{color:white;
+          text-decoration:none}.cards{display:flex;
+          gap:18px;
+          justify-content:center;
+          flex-wrap:wrap;padding:30px}.card{background:white;
+          padding:25px;
+          width:220px;
+          text-align:center;
+          border-radius:10px;
+          box-shadow:0 3px 10px #ccc}@media(max-width:600px){header{flex-direction:column}nav{flex-wrap:wrap;
+          justify-content:center}}
+        </style>
+     </head>
+     <body>
+        <header><h2>My Portfolio</h2>
+            <nav><a href="#">Home</a>
+                <a href="#">About</a>
+                <a href="#">Projects</a>
+            </nav>
+        </header>
+        <div class="cards">
+            <div class="card">
+                <h3>HTML</h3>
+                <p>Page structure</p>
+            </div>
+            <div class="card">
+                <h3>CSS</h3>
+                <p>Page styling</p></div><div class="card"><h3>JavaScript</h3><p>Page interaction</p></div></div></body></html>

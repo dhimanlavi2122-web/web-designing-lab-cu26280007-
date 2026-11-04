@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <title>Back to Top</title>
+        <style>
+             body{font-family:Arial;
+             margin:0}main{height:1300px;
+             padding:30px;
+             background:linear-gradient(white,#ddd)}#topBtn{display:none;
+             position:fixed;
+             bottom:20px;right:20px;
+             padding:12px 18px;
+             background:#26345d;
+             color:white;
+             border:0;border-radius:6px;cursor:pointer}
+        </style>
+    </head>
+    <body>
+        <main>
+            <h1 id="top">Scroll Down</h1>
+            <p>Scroll the page to see the button.</p>
+        </main>
+        <button id="topBtn">Back to Top ↑</button>
+        <script>
+            let b=document.getElementById("topBtn");
+            window.addEventListener("scroll",()=>{b.style.display=window.scrollY>200?"block":"none"});
+            b.onclick=()=>window.scrollTo({top:0,behavior:"smooth"});
+        </script>
+    </body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,
+        initial-scale=1">
+        <title>Testimonials</title>
+        <style>
+          body{font-family:Arial;
+          text-align:center;
+          background:#eef2f7;
+          padding:40px}.card{max-width:450px;
+          margin:auto;
+          background:white;
+          padding:30px;
+          border-radius:12px;
+          min-height:130px}.card p{transition:opacity .4s}
+        </style>
+    </head>
+    <body>
+        <h1>Student Reviews</h1>
+        <div class="card">
+            <h2 id="person">Lavi</h2>
+            <p id="review">This course is very useful.</p>
+        </div>
+        <button onclick="previous()">Previous</button> 
+        <button onclick="next()">Next</button>
+        <script>
+           let data=[["Lavi","This course is very useful."],
+           ["Riti","The lessons are easy to understand."],
+           ["Naina","I learned many new things."]],
+           i=0;
+           function show(){person.textContent=data[i][0];
+           review.textContent=data[i][1]}function next(){i=(i+1)%data.length;
+           show()}function previous(){i=(i-1+data.length)%data.length;
+           show()}
+        </script>
+    </body>
+</html>

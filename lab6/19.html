@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <title>Project Search</title>
+        <style>
+            body{font-family:Arial;
+                 background:#f4f6fa;
+                 text-align:center;
+                 padding:25px}
+            input{padding:12px;
+                 width:min(90%,350px);
+                 margin:15px}.projects{
+                 display:flex;
+                 gap:15px;
+                 justify-content:center;
+                 flex-wrap:wrap}.card{
+                    background:white;
+                    padding:25px;width:180px;
+                    border-radius:8px;
+                    box-shadow:0 2px 8px #ddd}
+        </style>
+    </head>
+   <body>
+    <h1>My Projects</h1>
+    <input id="search" placeholder="Search projects...">
+    <div class="projects" id="projects">
+        <div class="card">Portfolio Website</div>
+        <div class="card">Library System</div>
+        <div class="card">Student Management</div>
+        <div class="card">Calculator</div>
+        </div>
+        <script>
+         document.getElementById("search").addEventListener("input",function(){let value=this.value.toLowerCase();document.querySelectorAll(".card").forEach(card=>{card.style.display=card.textContent.toLowerCase().includes(value)?"block":"none"})});
+        </script>
+    </body>
+</html>

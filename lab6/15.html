@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1"><title>Statistics Counter</title><style>
+body{font-family:Arial;text-align:center;padding:40px}.stats{display:flex;justify-content:center;gap:25px;flex-wrap:wrap}.item{background:#eef2f7;padding:25px;width:150px;border-radius:10px}.number{font-size:32px;color:#26345d}
+</style>
+</head>
+<body>
+    <h1>Our Statistics</h1>
+    <div class="stats">
+        <div class="item">
+            <div class="number" data-target="100">0 </div>
+            Students</div>
+            <div class="item">
+                <div class="number" data-target="25">0
+
+                </div>Projects</div>
+                <div class="item">
+                    <div class="number" data-target="10">0</div>
+                    Courses</div>
+                    </div>
+        <script>
+            let started=false;function count(){if(started)return;started=true;document.querySelectorAll(".number").forEach(el=>{let target=+el.dataset.target,n=0,step=Math.ceil(target/50);let timer=setInterval(()=>{n+=step;if(n>=target){n=target;clearInterval(timer)}el.textContent=n},30)})}window.addEventListener("scroll",count);if(window.scrollY===0)setTimeout(count,300);
+        </script>
+</body>
+</html>

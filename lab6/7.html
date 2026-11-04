@@ -1,0 +1,6 @@
+<!DOCTYPE html>
+<html><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Theme Toggle</title><style>
+:root{--bg:#fff;--fg:#222;--card:#eee}body{background:var(--bg);color:var(--fg);font-family:Arial;text-align:center;padding:50px;transition:.3s}.box{background:var(--card);padding:30px;border-radius:10px;max-width:400px;margin:auto}button{padding:10px 20px}
+</style></head><body><div class="box"><h1>Theme Switcher</h1><p>Click the button to change theme.</p><button id="toggle">Dark Mode</button></div><script>
+let dark=false;document.getElementById("toggle").onclick=function(){dark=!dark;document.documentElement.style.setProperty("--bg",dark?"#171717":"#fff");document.documentElement.style.setProperty("--fg",dark?"#fff":"#222");document.documentElement.style.setProperty("--card",dark?"#333":"#eee");this.textContent=dark?"Light Mode":"Dark Mode"};
+</script></body></html>
