@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Root and Roast Eco Friendly Cafe">
+    <meta property="og:title" content="Root and Roast Cafe">
+    <meta property="og:description" content="Fresh food and organic coffee">
+
+    <title>Root & Roast - Eco Friendly Cafe</title>
+
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+<a href="#main" class="skip-link">Skip to content</a>
+
+<header>
+    <h2>Root & Roast ☕</h2>
+
+    <nav aria-label="Main navigation">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#menu">Menu</a>
+        <a href="#team">Team</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<main id="main">
+
+    <section id="home" class="hero">
+        <h1>Welcome to Root & Roast</h1>
+        <p>Good Food. Healthy Life. Green Planet.</p>
+
+        <div class="carousel">
+            <h2 id="slide-title">Fresh Organic Coffee ☕</h2>
+            <button id="next-slide" type="button">Next Slide →</button>
+        </div>
+
+        <a href="#booking" class="btn">Book a Table</a>
+    </section>
+
+    <section id="about">
+        <h2>About Our Cafe</h2>
+        <p>
+            Root & Roast is an eco-friendly cafe serving
+            fresh, healthy and organic food.
+            We believe in sustainability and a greener future.
+        </p>
+    </section>
+
+    <section id="menu">
+        <h2>Our Menu</h2>
+
+        <div class="cards">
+            <article class="card">
+                <div class="food" role="img" aria-label="Coffee cup">☕</div>
+                <h3>Organic Coffee</h3>
+                <p>Freshly brewed coffee.</p>
+                <strong>₹150</strong>
+            </article>
+
+            <article class="card">
+                <div class="food" role="img" aria-label="Healthy salad">🥗</div>
+                <h3>Healthy Salad</h3>
+                <p>Fresh seasonal vegetables.</p>
+                <strong>₹200</strong>
+            </article>
+
+            <article class="card">
+                <div class="food" role="img" aria-label="Fresh sandwich">🥪</div>
+                <h3>Veg Sandwich</h3>
+                <p>Fresh and delicious sandwich.</p>
+                <strong>₹120</strong>
+            </article>
+        </div>
+    </section>
+
+    <section id="team">
+        <h2>Our Team</h2>
+        <div class="cards">
+            <article class="card">
+                <div class="food" role="img" aria-label="Chef">👩‍🍳</div>
+                <h3>Maya Sharma</h3>
+                <p>Founder & Head Chef</p>
+            </article>
+
+            <article class="card">
+                <div class="food" role="img" aria-label="Barista">☕</div>
+                <h3>Arjun Mehta</h3>
+                <p>Professional Barista</p>
+            </article>
+        </div>
+    </section>
+
+    <section id="reviews">
+        <h2>Customer Reviews</h2>
+
+        <div class="cards">
+            <article class="card">
+                <h3>Ananya</h3>
+                <p class="stars" aria-label="5 out of 5 stars">★★★★★</p>
+                <p>Excellent food and lovely atmosphere!</p>
+            </article>
+
+            <article class="card">
+                <h3>Rohan</h3>
+                <p class="stars" aria-label="5 out of 5 stars">★★★★★</p>
+                <p>Best coffee in town!</p>
+            </article>
+        </div>
+    </section>
+
+    <section id="booking">
+        <h2>Book Your Table</h2>
+
+        <form id="booking-form">
+
+            <label for="name">Your Name</label>
+            <input type="text" id="name" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" required>
+
+            <label for="date">Booking Date</label>
+            <input type="date" id="date" required>
+
+            <label for="guests">Number of Guests</label>
+            <select id="guests" required>
+                <option value="">Select Guests</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>
+
+            <button type="submit">Submit Booking</button>
+
+            <p id="message" role="status" aria-live="polite"></p>
+        </form>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+
+        <p>Address: Dehradun, Uttarakhand</p>
+        <p>Email: hello@rootandroast.example</p>
+
+        <iframe
+            title="Map of Dehradun"
+            src="https://www.google.com/maps?q=Dehradun,Uttarakhand&output=embed"
+            width="100%"
+            height="300"
+            loading="lazy">
+        </iframe>
+    </section>
+
+</main>
+
+<footer>
+    <h3>Root & Roast ☕</h3>
+
+    <p>Follow us on social media</p>
+
+    <a href="https://www.instagram.com/">Instagram</a>
+    <a href="https://www.facebook.com/">Facebook</a>
+
+    <button id="share-button" type="button">Share Website</button>
+
+    <p>© 2026 Root & Roast. Academic Project.</p>
+</footer>
+
+</body>
+</html>
